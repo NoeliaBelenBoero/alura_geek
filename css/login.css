@@ -1,0 +1,50 @@
+.iniciar__sesion{
+    display: grid;
+    justify-content: center;
+    height: 400px;
+    background: #eeeeee;
+    text-align: center;
+    align-items: center;
+}
+.sesion{
+    width: 400px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+}
+.sesion__btn {
+    margin-top: 1rem;
+    width: 10rem;
+    height: 3rem;
+    color:white;
+    background: rgb(86, 86, 223);
+    border: none;
+    border-radius: 3px;
+    margin-left: 100px;
+    padding-bottom: .5rem;
+}
+.sesion__btn:active{
+    background: orange;
+    color: blue;
+}
+.iniciar__sesion{
+    display: none;
+}
+@media only screen and (max-width: 360px) {
+    h7{
+        font-size: 30px;
+    }
+    .iniciar__sesion{
+        justify-items: center;
+    }
+    .sesion{
+        width: 300px;
+        height: 50px;
+    }
+    .sesion__btn{
+        margin: 0 0 0 0;
+        width: 100px;
+        height: 30px;
+        font-size: 15px;
+    }
+}

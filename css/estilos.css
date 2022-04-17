@@ -1,0 +1,376 @@
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+.header, .logo__barra {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding-left: 3rem;
+    padding-right: 5rem;
+}
+.imagen__header{
+    padding-right: 2rem;
+}
+.barra {
+    display: flex;
+    width: 20rem;
+    height: 2rem;
+    background: transparent;
+    border-radius: 24px 0 0 24px;
+    padding-left: 2rem;
+    border: 0.3px solid #cccccc;
+    border-right: none;
+}
+.btn__barra{
+    width: 3rem;
+    height: 2.3rem;
+    background:transparent;
+    border-radius: 0 24px 24px 0;
+    border: 0.3px solid #cccccc;
+    border-left: none;
+    color: black;
+}
+
+.btn__header {
+    width: 10rem;
+    height: 2.8rem;
+    border-color:rgb(86, 86, 223);
+    background: white;
+    color:rgb(86, 86, 223);
+    border: .123rem solid;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.btn__header:active{
+    background: rgb(86, 86, 223);
+    color: white;
+    border-color: darkblue;
+}
+
+.banner {
+    height: 450px;
+    width: 100%;
+    animation: banner 30s infinite linear alternate-reverse;
+    background-size: 100% 100%;
+    transition: 30s;
+}
+@keyframes banner{
+    0%, 20%{
+        background: url("../imagenes/banner-image.png") no-repeat center / cover;
+        transition: 30s;
+    }
+    25%, 45%{
+        background: url("../imagenes/sw1_img.jpg") no-repeat center / cover;
+        transition: 30s;
+    }
+    50%, 70%{
+        background: url("../imagenes/xbox.jpg") no-repeat center / cover;
+        transition: 30s;
+    }
+    75%, 100%{
+        background: url("../imagenes/banner_pareja_virtual.jpg") no-repeat center / cover;
+        transition: 30s;
+    }
+}
+.banner__informacion{
+    padding-top: 11.5rem;
+    padding-left: 5rem;
+}
+.banner__titulo {
+   color:white;
+   font-weight: bold;
+   font-size: 5rem;
+   text-shadow: .2rem .2rem black;
+}
+.banner__texto {
+   color:white;
+   font-weight: bold;
+   font-size: 2rem;
+   padding-top: 1rem;
+   text-shadow: .1rem .1rem black;
+}
+.banner__btn{
+    margin-top: 1rem;
+    width: 10rem;
+    height: 3rem;
+    color:white;
+    background: rgb(86, 86, 223);
+    border: none;
+    border-radius: 3px;
+}
+.banner__btn:active {
+    background: transparent;
+    color: blue;
+    box-shadow: 2px 2px 20px 5px white;
+}
+.star__wars, .consolas, .diversos{
+    padding: 4rem 5rem 2rem 5rem;
+}
+.barra__productos{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    
+}
+h3{
+    font-size: 2rem;
+    font-weight: bold;
+}
+button{
+    color:blue;
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+}
+.imagenes{
+    display: flex;
+    justify-content: space-between;
+}
+h4, h5, button{
+    padding-top: .5rem;
+}
+h5{
+    font-weight: bold;
+}
+/* FOOTER-FORMULARIO*/
+footer{
+    padding-bottom: 2rem;
+}
+.logo__formulario{
+    display: flex;
+    justify-content: space-around;
+    height: 400px;
+    background-color: rgb(213, 213, 252);
+    margin-bottom: 2rem;
+    padding: 4rem 0 2rem 0;
+}
+.logo1{
+    height: 4rem;
+    width: 13rem;
+    padding: 3rem 2rem 0 2rem;
+}
+.formulario{
+    display: flex;
+}
+.items{
+    padding: 2rem 5rem 0 0;
+}
+li{
+    font-size: 1.2rem;
+    padding: .5rem .2rem  2rem 0;
+}
+.form__caja{
+    display:grid;
+    padding: 2rem 5rem 0 0;
+}
+h7{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: .5rem 0 0 0;
+}
+.nombre{
+    width: 30rem;
+    height: 3rem;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px 1px #cccccc;
+    padding-left: 1rem;
+}
+textarea{
+    height: 6rem;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px 1px #cccccc;
+    padding-left: 1rem;
+}
+.btn__form{
+    background: rgb(86, 86, 223);
+    color:white;
+    width: 10rem;
+    height: 3rem;
+    padding-bottom: .5rem;
+}
+.btn__form:active{
+    background: rgb(213, 213, 252);
+    border:inset;
+    color:darkblue;
+}
+h6{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+/* Responsive tablet*/
+@media only screen and (max-width: 768px) {
+    .header{
+        height: 72px;
+        padding: 0 20px 0 20px;
+    }
+    .imagen__header {
+        width: 95px;
+        height: 30px;
+    }
+    .barra {
+        width:262px;
+    }
+    .logo__barra {
+        padding-left: 0;
+    }
+    .banner {
+        height: 352px;
+    }
+    .banner__titulo{
+        font-size: 50px;
+    }
+    .banner__texto{
+        font-size: 20px;
+    }
+    .star__wars, .consolas, .diversos{
+        padding: 20px 20px 20px 20px;
+    }
+    .img5, .img6 {
+        display: none;
+    }
+    
+    h3 {
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    img {
+        width: 164px;
+        height: 174px;
+    } 
+    .logo__formulario{
+        flex-direction: column;
+        padding: 0 0 20px 0;
+    }
+    .items{
+        width: 50%;
+    }
+    .form__caja{
+        width: 50%;
+        row-gap: 20px;
+    
+    }
+    ul{
+        padding-right: 0;
+    }
+    li{
+        font-size: 15px;
+        padding: 10px 0 10px 20px;
+    }
+    h7 {
+        font-size: 20px;
+    }
+    .nombre{
+        width: 400px;
+        height: 45px;
+    }
+    .btn__form{
+        width: 130px;
+        height: 35px;
+        font-size: 12px;
+    }
+    .banner__btn{
+        width: 130px;
+        height: 50px;
+        font-size: 15px;
+    }
+}
+/* Responsive Mobile*/
+@media only screen and (max-width: 360px){
+    .header{
+        padding: 0 10px 0 10px;
+        position: relative;
+    }
+    .barra{
+        display: none;
+    }
+    .btn__barra{
+        background: transparent;
+        border: none;
+        position: absolute;
+        left: 290px;
+        font-size: 20px;
+    }
+    .btn__header{
+        position: absolute;
+        right: 100px;
+        width: 110px;
+        height: 30px;
+        font-size: 9px;
+        padding-bottom: 5px;
+    }
+    .logo__barra{
+        width: 70px;
+        height: 15px;
+    }
+    .banner{
+        height: 192px;
+    }
+    .banner__informacion{
+        padding-top: 80px;
+        padding-left: 30px;
+    }
+    .banner__titulo{
+        font-size: 20px;
+        text-shadow: none;
+    }
+    .banner__texto{
+        font-size: 10px;
+        text-shadow: none;
+    }
+    .banner__btn{
+        width: 80px;
+        height: 30px;
+        font-size: 7px;
+    }
+    .imagenes{
+       flex-wrap: wrap;
+    }
+    img{
+        width: 146px;
+        height: 140px;
+    }
+    .formulario{
+        flex-direction: column;
+        padding-top: 10px;
+    }
+    .logo__formulario{
+        padding: 10px 0 0 0;
+        height: 500px;
+        justify-content: center;
+    }
+    .items{
+        width: 60%;
+        padding: 0 0 5px 50px;
+        text-align: center;
+    }
+    li{
+        font-size: 15px;
+        padding: 5px 0 5px 20px;
+    }
+    .logo1{
+        margin-top: 5px;
+        width: 100px;
+        height: 40px;
+        padding-top: 0;
+        padding-left: 100px;
+    }
+    .form__caja{
+        padding: 10px 0 10px 20px;
+    }
+    h7{
+        font-size: 15px;
+    }
+    .nombre{
+        width: 270px;
+        height: 30px;
+    }
+    h6{
+        font-size: 12px;
+    }
+}
